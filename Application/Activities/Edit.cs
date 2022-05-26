@@ -19,10 +19,10 @@ namespace Application.Activities
     public class Handler : IRequestHandler<command>
     {
       private readonly DataContext context;
-    private readonly IMapper mapper;
+      private readonly IMapper mapper;
       public Handler(DataContext context, IMapper mapper)
       {
-      this.mapper = mapper;
+        this.mapper = mapper;
         this.context = context;
       }
 
